@@ -1,0 +1,22 @@
+.project-title-container {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.project-title-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 
+    0 0 7px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 21px rgba(255, 255, 255, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
+.project-title-text:hover {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+}

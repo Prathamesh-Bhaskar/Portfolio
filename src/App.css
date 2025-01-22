@@ -1,0 +1,101 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color:black;
+}
+
+.background-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-content {
+  position: relative;
+  z-index: 10;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  animation: 
+    float var(--animation-duration) infinite,
+    rotate var(--rotation-delay) linear infinite;
+}
+
+.icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.floating-icon:hover {
+  opacity: 1.0;
+  transform: scale(1.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .floating-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Additional styles for dark theme */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Ensure smooth animations */
+* {
+  box-sizing: border-box;
+}
+
+/* Optional: Add a gradient overlay to the background */
+.app-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+/* Ensure content is above gradient overlay */
+.main-content {
+  position: relative;
+  z-index: 2;
+}

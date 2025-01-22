@@ -1,0 +1,159 @@
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-text {
+  flex: 1;
+  padding-right: 5px;
+  margin-left: 0px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: #00ff99;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #ff5733;
+  margin: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.description {
+  font-size: 1rem;
+  color: #e5e5e5;
+  margin-top: 20px;
+  line-height: 2;
+  white-space: pre-line;
+  max-width: 500px;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.icon {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  animation: pulse-glow 2s infinite;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+.icon:nth-child(1) {
+  filter: drop-shadow(0 0 2px rgba(37, 211, 102, 0.3));
+}
+
+.icon:nth-child(1):hover {
+  color: #25d366;
+  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.8));
+}
+
+.icon:nth-child(2) {
+  filter: drop-shadow(0 0 2px rgba(0, 204, 255, 0.3));
+}
+
+.icon:nth-child(2):hover {
+  color: #00ccff;
+  filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.8));
+}
+
+.icon:nth-child(3) {
+  filter: drop-shadow(0 0 2px rgba(0, 119, 181, 0.3));
+}
+
+.icon:nth-child(3):hover {
+  color: #0077b5;
+  filter: drop-shadow(0 0 8px rgba(0, 119, 181, 0.8));
+}
+
+.profile-image {
+  flex: 0 0 350px; /* Increased size */
+  position: relative;
+  width: 350px; /* Increased size */
+  height: 350px; /* Increased size */
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #2a2a2a; /* For visibility of the PhysicsEngine */
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+@keyframes pulse-glow {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .profile-text {
+    padding-right: 0;
+  }
+
+  .profile-image {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    flex: 0 0 250px;
+    padding: 6px;
+  }
+
+  .typing-effect {
+    overflow: hidden;
+    border-right: 2px solid #ff5733;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    margin: 0 auto;
+  }
+}

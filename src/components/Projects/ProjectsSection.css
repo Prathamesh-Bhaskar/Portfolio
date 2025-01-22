@@ -1,0 +1,452 @@
+/* Main container */
+.projects-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
+  color: #d63e3e;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Spotify Player Styles */
+.spotify-player {
+  width: 300px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #1DB954;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.spotify-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #1DB954;
+}
+
+.spotify-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.spotify-iframe {
+  border-radius: 8px;
+}
+
+/* Project Title Styles */
+.h2.project-title {
+  color: #e3d7d9;
+  margin-top: 0px;
+  
+}
+
+.projects-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, #00ff99, #00ccff);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Project Card Styles */
+.project-card-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff99 transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-container:hover .project-info {
+  opacity: 1;
+}
+
+.project-card-container:hover .project-title-overlay {
+  opacity: 0;
+}
+
+/* Scrollbar Styles */
+.project-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-info::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-info::-webkit-scrollbar-thumb {
+  background-color: #00ff99;
+  border-radius: 3px;
+}
+
+/* Timeline Item Styles */
+.timeline-item {
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.timeline-left {
+  justify-content: flex-start;
+}
+
+.timeline-right {
+  justify-content: flex-end;
+}
+
+/* Timeline Content Styles */
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #f21b6a;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.timeline-left .timeline-content {
+  margin-right: 250px;
+  right: 30px;
+}
+
+.timeline-right .timeline-content {
+  margin-left: 250px;
+  left: 30px;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px 5px rgba(242, 27, 106, 0.3);
+}
+
+/* Timeline Date Styles */
+.timeline-date {
+  position: absolute;
+  top: 20px;
+  width: 250px;
+  padding: 10px;
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  color: black;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timeline-left .timeline-date {
+  top: 120px;
+  right: -400px;
+}
+
+.timeline-right .timeline-date {
+  top: 120px;
+  left: -400px;
+  right: 450px;
+  margin-right: 350px;
+}
+
+/* Project Details Styles */
+.project-title {
+  
+  font-size: 1.5rem;
+  color: #00ff99;
+  margin: 20px 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tech-chip {
+  background: rgba(0, 204, 255, 0.2);
+  border: 1px solid #00ccff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #00ccff;
+}
+
+.project-description {
+  color: #e5e5e5;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.bullet-points {
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #e5e5e5;
+}
+
+/* Project Buttons Styles */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-button.live-link {
+  background: rgba(0, 255, 153, 0.2);
+  color: #00ff99;
+  border: 1px solid #00ff99;
+}
+
+.project-button.github-link {
+  background: rgba(0, 204, 255, 0.2);
+  color: #00ccff;
+  border: 1px solid #00ccff;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+/* Divider Styles */
+.projects-divider {
+  width: 90%;
+  height: 3px;
+  background: linear-gradient(to right, #00ff99, #00ccff);
+  margin: 0 auto 0px;
+  border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    justify-content: flex-end;
+  }
+
+  .timeline-content {
+    width: 80%;
+    margin: 0 !important;
+  }
+
+  .timeline-date {
+    left: 0 !important;
+    top: -40px !important;
+    width: auto !important;
+    position: relative;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spotify-player {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+/* Add these new styles to your existing CSS */
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.spotify-container {
+  position: absolute;
+  left: -100px; /* Increase this value to move it further left */
+  top: 0;
+  width: 300px;
+  z-index: 10;
+}
+
+.spotify-player {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ff99;
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 255, 153, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotify-player:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 255, 153, 0.3);
+}
+
+.spotify-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #00ff99;
+  font-weight: 600;
+}
+
+.spotify-icon {
+  width: 24px;
+  height: 24px;
+  color: #00ff99;
+}
+
+.spotify-iframe {
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* Update the first timeline item to make space for Spotify player */
+.timeline-wrapper:first-child .timeline-content {
+  margin-left: 320px;
+}
+
+@media (max-width: 1200px) {
+  .spotify-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .spotify-player {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .timeline-wrapper:first-child .timeline-content {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-wrapper:first-child .timeline-content {
+    margin-left: 0;
+  }
+}
+
+/* Update the title overlay position */
+.project-title-overlay {
+  position: absolute;
+  top: 20px;  /* Changed from bottom: 20px to top: 20px */
+  left: 20px;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+
+/* Timeline Item Styles */
+.timeline-heading {
+  margin-top: -50px; /* Adjusted to move the title further up */
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.timeline-left-heading {
+  justify-content: flex-start;
+}
+
+.timeline-right-heading {
+  justify-content: flex-end;
+}
+
+.project-heading-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 
+  0 0 7px rgba(255, 255, 255, 0.3),
+  0 0 10px rgba(255, 255, 255, 0.2),
+  0 0 21px rgba(255, 255, 255, 0.1);
+transition: text-shadow 0.3s ease;
+}
+.project-heading-title:hover {
+  text-shadow: 
+    0 0 7px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 21px rgba(255, 255, 255, 0.3),
+    0 0 42px rgba(255, 255, 255, 0.2);
+}
+
+
