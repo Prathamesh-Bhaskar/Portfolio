@@ -3,7 +3,8 @@ export const projects = [
     id: 1,
     title: "Analtyica - Personalised Social media Analytics",
     date: "LEVEL- Supermind Hackathon 2025",
-    image: "src/components/public/images/analytica.png",
+    image:
+      "https://res.cloudinary.com/daavjmge8/image/upload/v1737615101/analytica_rraov7.png",
     techStack: [
       "NextJS",
       "Datastax",
@@ -27,7 +28,8 @@ export const projects = [
     id: 2,
     title: "News Content Extraction and XML genreration",
     date: "Sakal News - Freelance Project",
-    image: "src/components/public/images/Enews.png",
+    image:
+      "https://res.cloudinary.com/daavjmge8/image/upload/v1737615103/Enews_i37jt6.png",
     techStack: ["Reactjs", "Python", "PyMuPDF", "GroqCloud", "LLM", "XML"],
     description:
       "Developed a scalable solution for extracting and structuring newspaper articles into a detailed XML format, enabling efficient data storage and retrieval",
@@ -44,7 +46,8 @@ export const projects = [
     id: 3,
     title: "Facetrack - Smart Attendance Monitoring",
     date: "Major Project",
-    image: "src/components/public/images/faceattendance.png",
+    image:
+      "https://res.cloudinary.com/daavjmge8/image/upload/v1737615099/faceattendance_ek9ezk.png",
     techStack: ["Python", "Machine Learning", "Opencv", "Firebase"],
     description:
       "This project is aimed at building a Siamese Neural Network for facial recognition using TensorFlow and OpenCV. ",
@@ -62,7 +65,8 @@ export const projects = [
     id: 4,
     title: "AppleVisionAssist - AI for apple products",
     date: "Dec 2023",
-    image: "src/components/public/images/applevision.jpeg",
+    image:
+      "https://res.cloudinary.com/daavjmge8/image/upload/v1737615100/applevision_j1ibid.jpg",
     techStack: ["ChatBot", "GenerativeAI", "LLM", "Streamlit"],
     description:
       "AppleVisionAssist is a conversational AI chatbot that serves both as an information resource and a sales agent for Apple's Vision Pro product. ",
@@ -79,7 +83,8 @@ export const projects = [
     id: 5,
     title: "STUFIN - Fintech learning app for students",
     date: "BlackRock HackNight 2024 ",
-    image: "src/components/public/images/stufin.jpeg",
+    image:
+      "https://res.cloudinary.com/daavjmge8/image/upload/v1737615101/stufin_wzymuk.jpg",
     techStack: [
       "React",
       "TypeScript",
