@@ -32,7 +32,7 @@ const techIcons = [
     rotationDelay: 7,
   },
   {
-    src: "src/components/public/icons/react.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613615/react_qgnvm1.png",
     top: 15,
     left: 62 ,
     delay: 3,
