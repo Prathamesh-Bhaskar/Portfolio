@@ -8,7 +8,7 @@ import SkillsSection from "./components/Skills/SkillsSection";
 // Import icons
 const techIcons = [
   {
-    src: "src/components/public/icons/html.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
     top: 3,
     left: 3,
     delay: 0,
