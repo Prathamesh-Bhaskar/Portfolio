@@ -16,7 +16,7 @@ const techIcons = [
     rotationDelay: 3,
   },
   {
-    src: "src/components/public/icons/css.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613608/css_kvkern.png",
     top: 7,
     left: 12,
     delay: 1,
@@ -24,7 +24,7 @@ const techIcons = [
     rotationDelay: 5,
   },
   {
-    src: "src/components/public/icons/js.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613609/js_cynarz.png",
     top: 25,
     left: 30,
     delay: 2,
@@ -40,7 +40,7 @@ const techIcons = [
     rotationDelay: 2,
   },
   {
-    src: "src/components/public/icons/nextjs.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613609/nextjs_yzujzg.png",
     top: 28,
     left: 15,
     delay: 4,
@@ -48,7 +48,7 @@ const techIcons = [
     rotationDelay: 4,
   },
   {
-    src: "src/components/public/icons/tailwindcss.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613615/tailwindcss_o2ifkj.png",
     top: 19,
     left: 77,
     delay: 5,
@@ -56,7 +56,7 @@ const techIcons = [
     rotationDelay: 6,
   },
   {
-    src: "src/components/public/icons/git.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613608/git_wcvokd.png",
     top: 3,
     left: 81,
     delay: 1,
@@ -64,7 +64,7 @@ const techIcons = [
     rotationDelay: 8,
   },
   {
-    src: "src/components/public/icons/github.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613609/github_yiumxo.png",
     top: 21,
     left: 18,
     delay: 2,
@@ -72,7 +72,7 @@ const techIcons = [
     rotationDelay: 9,
   },
   {
-    src: "src/components/public/icons/nodejs.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613610/nodejs_rnir9r.png",
     top: 21,
     left: 68,
     delay: 3,
@@ -80,7 +80,7 @@ const techIcons = [
     rotationDelay: 10,
   },
   {
-    src: "src/components/public/icons/python2.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/python2_ukqznh.png",
     top: 17,
     left: 8,
     delay: 5,
@@ -88,7 +88,7 @@ const techIcons = [
     rotationDelay: 9,
   },
   {
-    src: "src/components/public/icons/c++.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613601/c_sn3awg.png",
     top: 13,
     left: 16,
     delay: 0,
@@ -96,7 +96,7 @@ const techIcons = [
     rotationDelay: 13,
   },
   {
-    src: "src/components/public/icons/firebase2.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613601/firebase2_fspq9q.png",
     top: 34,
     left: 65,
     delay: 1,
@@ -105,7 +105,7 @@ const techIcons = [
     
   },
   {
-    src: "src/components/public/icons/postgres2.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/postgres2_zzzhjp.png",
     
     top: 15,
     left: 92,
@@ -114,7 +114,7 @@ const techIcons = [
     rotationDelay: 4,
   },
   {
-    src: "src/components/public/icons/rust.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/rust_runknx.png",
     top: 11,
     left: 3,
     delay: 3,
@@ -122,7 +122,7 @@ const techIcons = [
     rotationDelay: 6,
   },
   {
-    src: "src/components/public/icons/aws.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/aws_lv8gvy.png",
     top: 9,
     left: 84,
     delay: 4,
@@ -130,7 +130,7 @@ const techIcons = [
     rotationDelay: 8,
   },
   {
-    src: "src/components/public/icons/docker.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613608/docker_jne0y6.png",
     top: 15,
     left: 30,
     delay: 5,
@@ -138,7 +138,7 @@ const techIcons = [
     rotationDelay: 3,
   },
   {
-    src: "src/components/public/icons/ts2.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613600/ts2_ajvhnj.png",
     top: 25,
     left: 76,
     delay: 0,
@@ -146,7 +146,7 @@ const techIcons = [
     rotationDelay: 5,
   },
   {
-    src: "src/components/public/kubernetes.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737614851/kubernetes_zkhjjq.png",
     top: 14,
     left: 78,
     delay: 1,
@@ -154,7 +154,7 @@ const techIcons = [
     rotationDelay: 7,
   },
   {
-    src: "src/components/public/icons/solidity removebg.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/solidity_removebg_dqm3ay.png",
     top: 24,
     left: 3,
     delay: 2,
@@ -162,7 +162,7 @@ const techIcons = [
     rotationDelay: 9,
   },
   {
-    src: "src/components/public/icons/ethereum.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613602/ethereum_tml6xi.png",
     top: 6,
     left: 95,
     delay: 3,
@@ -170,7 +170,7 @@ const techIcons = [
     rotationDelay: 10,
   },
   {
-    src: "src/components/public/icons/tensorflow.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613600/tensorflow_kraqli.png",
     top: 22,
     left: 88 ,
     delay: 3,
@@ -178,7 +178,7 @@ const techIcons = [
     rotationDelay: 10,
   },
   {
-    src: "src/components/public/icons/azure.png",
+    src: "https://res.cloudinary.com/daavjmge8/image/upload/v1737613601/azure_ix1knb.png",
     top: 25,
     left: 95,
     delay: 1,
