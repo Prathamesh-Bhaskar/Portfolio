@@ -146,7 +146,7 @@ const techIcons = [
     rotationDelay: 5,
   },
   {
-    src: "src/components/public/icons/kubernetes.png",
+    src: "src/components/public/kubernetes.png",
     top: 14,
     left: 78,
     delay: 1,
